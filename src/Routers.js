@@ -19,6 +19,7 @@ import AdminLayoutRoute from "./component/adminlayout/AdminLayout";
 //// import AddressbookPageNew from "./pages/adminpages/AddressbookPageNew";
 
 import LoginPage from "./pages/LoginPage";
+import LoginWithGoogle from "pages/LoginWithGoogle";
 import CounterPage from "./pages/CounterPage";
 import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
@@ -81,6 +82,7 @@ class Routers extends Component {
             />
             <BackLayoutRoute path="/back/dashboard" component={AboutUsPage} />
             <LoginLayoutRoute path="/login" component={LoginPage} />
+            <LoginLayoutRoute path="/login2" component={LoginWithGoogle} />
             <Route path="/login1" component={LoginPage} />
             <Route exact path="/" component={HomePage} />
             <Route path="/about" component={AboutUsPage} />

@@ -3,7 +3,7 @@ const initialState = user ? { loggedin: true, user } : {};
 // const initialState = {};
 const loginReducer = (state = initialState, action) => {
   const { type, payload } = action;
-  console.log(JSON.stringify(initialState));
+  // console.log(JSON.stringify(initialState));
   switch (type) {
     case "LOGIN1":
       return state.concat([payload]);
